@@ -6,14 +6,17 @@ PRs welcome!
 If your tool of choice isn't listed below -- add it.  
 
 # Supported Frameworks 
-
-Kubernetes v.1.3.0 aka k8s
-Swarm v1.12.0-rc2
-
-# Supported Providers
-Google Cloud Platform aka GCP
+| framework  | version |
+| --- | --- |
+| Kubernetes (k8s) | v.1.3.0 |
+| Swarm | v1.12.0-rc2 |
 
 More to come (ie, marthon+mesos, nomad, etc).
+
+# Supported Providers
+Google Cloud Platform (GCP)
+
+More to come (ie, Amazon Web Services, Azure, etc).
 
 # Tutorials
 
