@@ -1,4 +1,4 @@
-# Container Orchestration Frameowkr Comparisons
+# Container Orchestration Framework Comparisons
 This repo contains tutorials on how to perform common task (like deploying a cluster) with various Container Orchestration tools.
 
 PRs welcome!
