@@ -1,4 +1,4 @@
-# container-orchestration-comparisons
+# Container Orchestration Frameowkr Comparisons
 This repo contains tutorials on how to perform common task (like deploying a cluster) with various Container Orchestration tools.
 
 PRs welcome!
@@ -21,7 +21,7 @@ More to come (ie, marthon+mesos, nomad, etc).
 
 How to set up the different frameworks on various cloud providers.
 
-If there's a hosted version it's represented via a '/' like so: hosted / non-hosted
+If there's a hosted version it's represented like so: hosted / non-hosted
 
 |  | GCP |
 | --- | --- |
