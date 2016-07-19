@@ -35,5 +35,5 @@ If there's a hosted version it's represented like so: hosted / non-hosted
 
 |  | Kubernetes |  Swarm   |
 | --- | --- | --- |
-| [Blue/Green Deployments](blue-green-deployment/README.md) | [link](blue-green-deployment/kubernetes/README.md) | TBD |
+| [Blue/Green Deployments](blue-green-deployment/) | [link](blue-green-deployment/kubernetes/README.md) | TBD |
 | Route traffic to multiple backends with nginx | TBD | TBD |
