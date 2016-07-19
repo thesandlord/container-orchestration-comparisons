@@ -26,14 +26,14 @@ How to set up the different frameworks on various cloud providers.
 
 If there's a hosted version it's represented like so: hosted / non-hosted
 
-|  | GCP |
+|  | Google Cloud Platform |
 | --- | --- |
 | Kubernetes | hosted / non-hosted |
 | Swarm | TBD | 
 
 ## Common Tasks
 
-|  | k8s |  Swarm   |
+|  | Kubernetes |  Swarm   |
 | --- | --- | --- |
-| Blue/Green Deployments | [link](blue-green-deployment/kubernetes/README.md) | TBD |
+| [Blue/Green Deployments](blue-green-deployment/README.md) | [link](blue-green-deployment/kubernetes/README.md) | TBD |
 | Route traffic to multiple backends with nginx | TBD | TBD |
