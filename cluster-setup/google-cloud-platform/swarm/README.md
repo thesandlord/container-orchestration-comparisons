@@ -23,13 +23,13 @@ Specify 3 workers in `options.sh`
 
 ### Step 3: Add Extra Node to the Cluster
 
-Start a new shell to prevent environmnet variable plution:
+Start a new shell and load environment variables:
 
-`sh`
+```
+sh
 
-Load environment variables
-
-`source options.sh`
+source options.sh
+```
 
 Create Node:
 ```
@@ -45,9 +45,12 @@ docker-machine create $PREFIX-worker-4 \
 
 Join the Swarm:
 
-`SWARM_MANAGER_INTERNAL_IP=$(gcloud compute instances describe $PREFIX-manager-1 --zone $MANAGER_ZONE --format=text | grep '^networkInterfaces\[[0-9]\+\]\.networkIP:' | sed 's/^.* //g')
-`
 ```
+SWARM_MANAGER_INTERNAL_IP=$(gcloud compute instances describe $PREFIX-manager-1 \
+    --zone $MANAGER_ZONE --format=text | \
+    grep '^networkInterfaces\[[0-9]\+\]\.networkIP:' | \
+    sed 's/^.* //g')
+
 eval $(docker-machine env $PREFIX-worker-4) && \
     docker swarm join $SWARM_MANAGER_INTERNAL_IP:2377 --secret $SWARM_SECRET
 ```
@@ -57,9 +60,11 @@ Exit the shell:
 
 ### Step 4: Remove Extra Node from the Cluster
 
-`$(source options.sh && docker-machine rm -f $PREFIX-worker-4)`
+```
+$(source options.sh && docker-machine rm -f $PREFIX-worker-4)
 
-`$(source options.sh && docker node rm $PREFIX-worker-4)`
+$(source options.sh && docker node rm $PREFIX-worker-4)
+```
 
 ##Optional - Drain node before deleting:
 This shouldn't be strictly necessary, as swarm will detect a node is deleted and automatically reschedule work.
@@ -80,7 +85,7 @@ I just picked a node at random
 
 `docker node update --availability drain my-swarm-worker-4`
 
-`kubectl get nodes`
+`docker nodes ls`
 
 | ID                          | NAME                | MEMBERSHIP  | STATUS  | AVAILABILITY  | MANAGER STATUS |
 | ---                         | ---                 | ---         | ---     | ---           | ---            |
