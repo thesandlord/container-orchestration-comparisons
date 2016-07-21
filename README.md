@@ -28,8 +28,8 @@ If there's a hosted version it's represented like so: hosted / non-hosted
 
 |  | Google Cloud Platform |
 | --- | --- |
-| Kubernetes | hosted / non-hosted |
-| Swarm | TBD | 
+| Kubernetes | [hosted](cluster-setup/google-cloud-platform/kubernetes/README.md) / non-hosted |
+| Swarm | [non-hosted](cluster-setup/google-cloud-platform/swarm/README.md) | 
 
 ## Common Tasks
 

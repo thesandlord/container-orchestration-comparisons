@@ -1,5 +1,5 @@
 # Blue-Green Deployment
-Steps to perform a Blue-Green Deployment on Kubernetes
+Steps to perform a manual Blue-Green Deployment on Kubernetes
 
 ### Prerequisites
 - Provisioned Kubernetes Cluster
