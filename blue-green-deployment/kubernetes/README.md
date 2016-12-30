@@ -121,7 +121,7 @@ Update the "blue" deployment to version 3.
 
 ### Step 6: Switch from Green to Blue
 
-Edit the Service so it sends traffic to the Green deployment.
+Edit the Service so it sends traffic to the Blue deployment.
    - `kubectl edit svc webserver`
 
 This will open the YAML in a text editor. Change "green" to "blue" and save.
